@@ -8,6 +8,17 @@
 
 <html>
     <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/demo.css" />
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HNZSEY6VK"></script>
         <script>
@@ -110,6 +121,11 @@
         flex-direction: column;
         padding: 20px;
         position: relative;
+        background-image: url('slider.jpg');
+         background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-size: cover;
+
     }
 
     .wrapper  {
@@ -295,6 +311,17 @@
         <meta charset="UTF-8">
     </head>
     <body>
+      <div id="particles-js"></div>
+
+			<ul class="cb-slideshow">
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	        </ul>
+
 
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0&appId=2843455895902898&autoLogAppEvents=1" nonce="O67w0iEg"></script>
 
@@ -448,54 +475,65 @@
     </script>
 
 
-    <div id="form" class="wrapper">
-        <header>
-            <h1>HashTag Generator</h1>
-        </header>
+    <div class="container-fluid">
+      <div class="row cb-slideshow-text-container ">
+        <div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
+        <header class="mb-5"><h1>HashTag Suggestor</h1></header>
 
-        <div class="ways">
-            <ul>
-                <li class="active">
-                    Choose Image from Computer
-                </li>
-                <li>
-                    Choose Image from Facebook
-                </li>
-            </ul>
+
+                  <form action="#" method="get" class="subscribe-form">
+                    <div class="row form-section">
+
+                      <div class="col-md-5 col-sm-5 col-xs-5">
+                        <button type="submit" class="tm-btn-subscribe">Choose Image from Computer</button>
+                      </div>
+            <div class="col-md-5 col-sm-5 col-xs-5">
+              <button type="submit" class="tm-btn-subscribe">Choose Image from Facebook</button>
+            </div>
+
+            <div class="sections">
+
+                <section class="active">
+
+                    <form action="<%= blobstoreService.createUploadUrl("/upload") %>" method="post" enctype="multipart/form-data">
+                        <input type="file"  name="myFile" onChange='getFileNameWithExt(event)'   required=""/>
+                        <input type="hidden" id="fileName" name="fileName" />
+                        <input type="submit" class="btn btn-info" value="Generate">
+                    </form>
+
+
+                </section>
+
+                <section>
+
+                        <div class="fb-login-button"
+                                data-max-rows="1"
+                                data-size="large"
+                                data-button-type="continue_with"
+                                data-use-continue-as="true"
+                                data-scope="public_profile,email"
+                                data-onlogin="checkLoginState();"
+                        ></div>
+
+
+                </section>
+
+            </div>
+
+
+          </div>
+                  </form>
+
+        <div class="tm-social-icons-container text-xs-center">
+                    <i class="fa fa-facebook"></i></a>
+
+         <i class="fa fa-twitter"></i></a>
+
+                </div>
+
         </div>
-
-        <div class="sections">
-
-            <section class="active">
-
-                <form action="<%= blobstoreService.createUploadUrl("/upload") %>" method="post" enctype="multipart/form-data">
-                    <input type="file"  name="myFile" onChange='getFileNameWithExt(event)'   required=""/>
-                    <input type="hidden" id="fileName" name="fileName" />
-                    <input type="submit" class="btn btn-info" value="Generate">
-                </form>
-
-
-            </section>
-
-            <section>
-
-                    <div class="fb-login-button"
-                            data-max-rows="1"
-                            data-size="large"
-                            data-button-type="continue_with"
-                            data-use-continue-as="true"
-                            data-scope="public_profile,email"
-                            data-onlogin="checkLoginState();"
-                    ></div>
-
-
-            </section>
-
-        </div>
-
-
+      </div>
 
     </div>
-
     </body>
 </html>
