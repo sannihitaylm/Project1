@@ -21,7 +21,7 @@ Project 1 Proposal
 ## **1. Description:**
 
 ### 1.1 Code repository:
-[Github Code Repository:](https://github.com/sannihitaylm/Project1)
+[Github Code Repository](https://github.com/sannihitaylm/Project1)
 
 ### 1.2 Project Proposal:
 [Project Proposal](https://github.com/sannihitaylm/Project1/wiki/Project1-proposal)
