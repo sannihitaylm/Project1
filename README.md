@@ -206,4 +206,4 @@ Java Doc: [Click here ](http://csweb01.csueastbay.edu/~zj2972/Project1/)
 [Youtube demonstration]()
 
 ## 7. Analytics Report
-[Report]()
+[Report](https://drive.google.com/file/d/18dR3g4V1dK1lQ8s_EWEtzLy0QJPoHrNm/view?usp=sharing)
