@@ -198,9 +198,9 @@ Java Doc: [Click here ](http://csweb01.csueastbay.edu/~zj2972/Project1/)
 
 ## **5. Code:**
 
-[Github Code repository path:](https://github.com/sannihitaylm/Project1)
+[Github Code repository path](https://github.com/sannihitaylm/Project1)
 
-[Images sent to Google Cloud Vision API](https://github.com/sannihitaylm/Project1/wiki/Few-Images-sent-to-Google-Vision-API)
+[Images sent to Google Cloud Vision API](https://github.com/sannihitaylm/Project1/wiki/Couple-of-images-sent-to-Google-Vision-API)
 
 ## **6. Youtube:**
 [Youtube demonstration](https://youtu.be/dV2goklEszY)
